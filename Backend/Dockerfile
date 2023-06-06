@@ -1,25 +1,13 @@
-FROM node:18
-
- 
+FROM node:latest
 
 WORKDIR /app
 
- 
-
 COPY package*.json ./
 
- 
-
-RUN npm install
-
- 
+RUN npm install -g npm@9.6.7 --silent
 
 COPY . .
 
- 
+EXPOSE 4002
 
-EXPOSE 4000
-
- 
-
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]

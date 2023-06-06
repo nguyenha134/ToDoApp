@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(
     cors({
-      origin: '*'
+      origin: 'http://ec2-54-82-244-122.compute-1.amazonaws.com:3000/'
     })
   );
 

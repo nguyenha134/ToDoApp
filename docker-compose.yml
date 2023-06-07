@@ -6,7 +6,7 @@ services:
       - 3000:3000
   backend:
     build: ./Backend
-    environment:
-      - REACT_APP_BACKEND_URL=http://ec2-3-87-223-183.compute-1.amazonaws.com:4002
+    # environment:
+    #   - REACT_APP_BACKEND_URL=http://ec2-3-87-223-183.compute-1.amazonaws.com:4002
     ports:
       - 4002:4002
